@@ -1,9 +1,9 @@
-# FlowGuard
+# RateShield
 
 > **A production-inspired rate limiting middleware built with Express.js
 > and Redis.**
 
-FlowGuard is a backend infrastructure project that implements and
+RateShield is a backend infrastructure project that implements and
 compares multiple rate limiting algorithms using Express.js and Redis.
 Instead of focusing on a single implementation, the project explores how
 different algorithms solve different traffic patterns, why they require
@@ -24,7 +24,7 @@ introduce.
 
 Rate limiting is one of the most widely used techniques for protecting
 APIs against abuse, excessive traffic and denial-of-service attacks.
-FlowGuard demonstrates this concept by progressively implementing
+RateShield demonstrates this concept by progressively implementing
 multiple algorithms instead of relying on a third-party library.
 
 The project starts with a simple in-memory implementation and evolves
@@ -143,7 +143,7 @@ storage requirements.
 ## Project Structure
 
 ``` text
-FlowGuard/
+RateShield/
 ├── assets/
 ├── docs/
 ├── postman/
@@ -182,8 +182,8 @@ FlowGuard/
 ### Installation
 
 ``` bash
-git clone https://github.com/Raghav-RB/FlowGuard.git
-cd Flowguard
+git clone https://github.com/rahul0049/rate-limiter.git
+cd RateShield
 npm install
 ```
 
@@ -245,7 +245,7 @@ The repository includes:
 Import:
 
 ``` text
-postman/FlowGuard.postman_collection.json
+postman/RateShield.postman_collection.json
 ```
 
 ### Fixed Window
@@ -317,7 +317,7 @@ security), depending on the application's requirements.
 -   Read configuration from environment variables
 -   Support user ID and API key based limiting
 -   Support Redis Cluster deployments
--   Publish FlowGuard as an npm package
+-   Publish RateShield as an npm package
 
 ------------------------------------------------------------------------
 
